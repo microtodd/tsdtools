@@ -35,7 +35,7 @@ for (my $i = 0; $i <= $#ARGV; $i++) {
     if ($ARGV[$i] eq '--numfiles')         { $DoCount = $ARGV[$i + 1]; $DoCountExt = $ARGV[$i + 2]; }
     if ($ARGV[$i] eq '--unzipall')         { $DoUnzipAll = $ARGV[$i + 1]; $DoUnzipAllDest = $ARGV[$i + 2]; }
     if ($ARGV[$i] eq '--cpall')            { $DoCopy = $ARGV[$i + 1]; $DoCopyDest = $ARGV[$i + 2]; $DoCopyExt = $ARGV[$i + 3]; }
-    if ($ARGV[$i] eq '--deleteall')        { $DoDelete = $ARGV[$i + 1]; $DoDeleteExt = $ARGV[$i + 3]; }
+    if ($ARGV[$i] eq '--deleteall')        { $DoDelete = $ARGV[$i + 1]; $DoDeleteExt = $ARGV[$i + 2]; }
     if ($ARGV[$i] eq '--dos2unixall')      { $DoDos2unix = $ARGV[$i + 1]; }
     if ($ARGV[$i] eq '--resursiveunzip')   { $DoRecursiveUnzip = $ARGV[$i + 1]; $DoRecursiveUnzipD = $ARGV[$i + 2]; }
 }
@@ -371,7 +371,7 @@ sub printVersion() {
     print <<EOF;
 tsdtools.pl ($cwd $0)
 Technical Software Development tools
-Version 1.3
+Version 1.3.1
 by T.S. Davenport (todd.davenport\@yahoo.com)
 EOF
 
