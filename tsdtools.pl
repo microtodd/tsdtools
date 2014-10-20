@@ -338,7 +338,7 @@ sub unzipBall { # ($baseDir, $dataRef, $finalDir, $parent)
     return 0;
 }
 
-sub printUsage() {
+sub printUsage {
     my $cwd = getcwd;
     print <<EOF;
 tsdtools.pl ($cwd $0)
@@ -366,7 +366,7 @@ EOF
 
 }
 
-sub printVersion() {
+sub printVersion {
     my $cwd = getcwd;
     print <<EOF;
 tsdtools.pl ($cwd $0)
